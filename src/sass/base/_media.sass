@@ -40,6 +40,21 @@
         &__tab
             width: 150px
             font-size: 15px
+    .comment
+        &-person
+            &__img
+                width: 130px
+                height: 130px
+            &__text
+                max-width: 400px
+            &__descr
+                font-size: 15px
+    .footer
+        &__info
+            width: 100%
+            height: 230px
+            padding-top: 35px
+            padding-bottom: 0
 
 
     
@@ -70,10 +85,10 @@
             font-size: 17px
             margin-top: 10px
     .benefits
-        &__icons
+        &__items
             flex-direction: column
             margin-top: 0
-        &__icon
+        &__item
             margin-top: 25px
             img
                 margin-bottom: 10px
@@ -91,11 +106,29 @@
         .slick-slide
             img
                 width: 450px
+    .comment
+        &-person
+            flex-direction: column
+            align-items: center
+            &__name
+                margin-top: 15px
+    .footer
+        &__social-item
+            &:hover 
+                background-color: $main-color
+                i
+                    color: #fff
+
 
     .title
         font-size: 25px
         &_left
             font-size: 22px
+    .button
+        &:hover
+            background-color: $main-color
+            color: #fff
+            border: none
 
 @media (max-width: 575px)
     .header
@@ -154,6 +187,35 @@
             margin-bottom: 10px
         &__content
             margin-top: 30px
+    .comment
+        &-person
+            &__img
+                margin-right: 0
+            &__text
+                max-width: 250px
+            &__descr
+                font-size: 14px
+    .footer
+        &__info
+            padding-left: 30px
+            padding-right: 30px
+        &__addr
+            font-size: 18px
+            margin-bottom: 25px
+        &__phone
+            margin-bottom: 30px
+    .modal
+        width: 250px
+        padding-left: 20px
+        padding-right: 20px
+        &__close
+            right: -30px
+        .feed-form
+            width: 209px
+            input 
+                font-size: 13px
+            button
+                font-size: 14px
 
 
     .title
